@@ -137,6 +137,19 @@ class ViewController: UIViewController
             currentOperation = operation
         }
     }
+    
+    @IBAction func clearButtonPressed(_ sender: UIButton)
+    {
+        playSound()
+        
+        currentOperation = Operation.Empty
+        runningNumber = ""
+        leftValueString = ""
+        rightValueString = ""
+        result = ""
+        outputLabel.text = "0"
+    }
+    
 
 }
 
